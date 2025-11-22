@@ -114,6 +114,12 @@ ul {
   color: var(--color-brand-dark);
 }
 
+/* .button[disabled] {
+  background-color: lightgray;
+  color: ghostwhite;
+  cursor: not-allowed;
+} */
+
 /* Link */
 
 .link {
@@ -553,6 +559,14 @@ ul {
   line-height: 1.17;
 }
 
+.form-input:not(:placeholder-shown) {
+  background-color: blue;
+}
+
+.form-input:required {
+  border-color: red;
+}
+
 .form-input:focus::placeholder {
   color: var(--color-primary-dark);
 }
@@ -574,3 +588,31 @@ ul {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
 }
+
+/* .checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: red;
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 2px;
+} */
